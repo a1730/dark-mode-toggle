@@ -44,7 +44,7 @@
   try {
     mode = localStorage.getItem(STORAGE_NAME);
   } catch (e) {
-    return;
+    // Couldn't retrieve mode, user-agent-preferred style will be applied.
   }
 
   const lightCSSMediaRegex = /\(\s*prefers-color-scheme\s*:\s*light\s*\)/gi;
